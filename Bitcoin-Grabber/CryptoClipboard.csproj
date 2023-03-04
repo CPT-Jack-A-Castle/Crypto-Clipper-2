@@ -53,4 +53,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target
+  Name="Protect"
+  AfterTargets="AfterCompile" BeforeTargets="BeforePublish"
+  Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  <ItemGroup>
+     <Assemblies Include="$(ProjectDir)$(IntermediateOutputPath)$(TargetFileName)" />
+  </ItemGroup>
+  <ArmDot.Engine.MSBuildTasks.ObfuscateTask
+    Inputs="@(Assemblies)"
+    ReferencePaths="@(_ResolveAssemblyReferenceResolvedFiles->'%(RootDir)%(Directory)')"
+  />
+</Target>
 </Project>
